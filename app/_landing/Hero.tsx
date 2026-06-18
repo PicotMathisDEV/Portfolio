@@ -7,12 +7,8 @@ import { Socials } from "./Socials";
 import { ArrowDown, ArrowRight } from "lucide-react";
 import { DropMenu } from "./DropMenu";
 import { IconCloudDemo } from "./TagCloud";
-import { useScopedI18n } from "@/locales/client";
 
 export const Hero = () => {
-  const tBtn = useScopedI18n("Buttons");
-
-  const tDesc = useScopedI18n("Description");
   return (
     <main className="h-full overflow-y-hidden overflow-x-hidden relative">
       <div className="absolute right-4 top-4 block sm-hidden sm:top-6 sm:right-10">
@@ -23,10 +19,13 @@ export const Hero = () => {
         <div>
           <div>
             <span className="rounded-full bg-yellow-300/10 px-3 py-1 xl:text-sm font-semibold leading-6 text-yellow-300 ring-1 ring-inset ring-yellow-300/10 lg:text-xs text-xs mr-3">
-              Full-Stack Developer
+              Developer
             </span>
             <span className="rounded-full bg-yellow-300/10 px-3 py-1 xl:text-sm font-semibold leading-6 text-yellow-300 ring-1 ring-inset ring-yellow-300/10 lg:text-xs text-xs">
               Junior
+            </span>
+            <span className="rounded-full bg-yellow-300/10 px-3 py-1 xl:text-sm font-semibold leading-6 text-yellow-300 ring-1 ring-inset ring-yellow-300/10 lg:text-xs text-xs mr-3">
+              Computer Science
             </span>
           </div>
 
@@ -34,22 +33,24 @@ export const Hero = () => {
             Mathis PICOT
           </h1>
 
-          <p className="mt-6 xl:text-lg lg:text-sm leading-8 text-gray-600 dark:text-gray-300">
-            {tDesc("Webdeveloper")}
+          <p className="mt-6 xl:text-lg lg:text-sm leading-8 text-gray-600 dark:text-gray-300 w-2/3">
+            Aspiring developer two years into my learning journey. I work mainly
+            in Visual Basic while building my Next.js skills, with a foundation
+            in networking, cybersecurity, and Cisco Packet Tracer
           </p>
 
           <div className="mt-10 flex items-center gap-x-6">
             <Link
-              href="/projects"
+              href="https://github.com/PicotMathisDEV?tab=repositories"
               className={`${buttonVariants({
                 size: "lg",
                 variant: "ghost",
               })}  text-gray-800  bg-yellow-300 hover:bg-yellow-200`}
             >
-              {tBtn("MyProjects")}
+              My projects
             </Link>
             <Button size="lg" variant="outline">
-              {tBtn("MySkills")}
+              My skills
               <ArrowDown className="transition-transform transform rotate-0 md:hidden" />
               <ArrowRight className=" hidden  md:flex" />
             </Button>
