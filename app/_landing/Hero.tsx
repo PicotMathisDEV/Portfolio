@@ -24,7 +24,7 @@ export const Hero = () => {
             <span className="rounded-full bg-yellow-300/10 px-3 py-1 xl:text-sm font-semibold leading-6 text-yellow-300 ring-1 ring-inset ring-yellow-300/10 lg:text-xs text-xs">
               Junior
             </span>
-            <span className="rounded-full bg-yellow-300/10 px-3 py-1 xl:text-sm font-semibold leading-6 text-yellow-300 ring-1 ring-inset ring-yellow-300/10 lg:text-xs text-xs mr-3">
+            <span className="rounded-full bg-yellow-300/10 px-3 py-1 xl:text-sm font-semibold leading-6 text-yellow-300 ring-1 ring-inset ring-yellow-300/10 lg:text-xs text-xs ml-3">
               Computer Science
             </span>
           </div>
