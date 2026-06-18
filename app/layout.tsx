@@ -17,16 +17,11 @@ export const metadata: Metadata = {
   description: "Website created and designed by Mathis for my portfolio",
 };
 
-// Modification ici: params n'est plus une promesse
 export default async function RootLayout({
-  params,
   children,
 }: {
-  params: { locale: string }; // Mettre à jour le type ici
   children: ReactElement;
 }) {
-  const { locale } = params; // Pas besoin de await ici
-
   return (
     <html lang="en" suppressHydrationWarning className="h-full">
       <body
